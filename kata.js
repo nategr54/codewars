@@ -24,3 +24,12 @@ function countBy(x,n) {
   }
   return z
 }
+
+//Create a function that converts USD to CNY
+//return as a string '.... Chinese Yuan'
+
+function usdcny(usd) {
+  let con = usd * 6.75
+  return `${con.toFixed(2)} Chinese Yuan`
+}
+
