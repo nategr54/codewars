@@ -12,3 +12,15 @@ function plural(n) {
 function plural(n) {
     return n !==1;
 }
+
+//create a function w two arguments that will return an array of the first(n) multiples of (x)
+//assume both x and n will be greater than 0
+//return as an array
+
+function countBy(x,n) {
+  let z = []
+  for(i = 1; i <= n; i++) {
+    z.push(x*i);
+  }
+  return z
+}
