@@ -38,3 +38,28 @@ function usdcny(usd) {
 function solution(str) {
   return str.split('').reverse().join('')
 }
+
+//Cat years and dog years given human years 
+let humanYearsCatYearsDogYears = function(humanYears) {
+
+  let arr = []
+  let catYears
+  let dogYears
+  
+  if (humanYears == 1) {
+    catYears = 15
+    dogYears = 15
+  } else if (humanYears == 2) {
+    catYears = 24
+    dogYears = 24
+  } else if (humanYears > 2) {
+    catYears = 24 + (4 * (humanYears - 2)) 
+    dogYears = 24 + (5 * (humanYears - 2))
+  } else {
+    catYears = 'human years cannot be 0'
+    dogYears = 'human years cannot be 0'
+  }
+  
+  arr.push(humanYears,catYears,dogYears)
+  return arr
+}
