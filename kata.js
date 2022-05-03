@@ -33,3 +33,8 @@ function usdcny(usd) {
   return `${con.toFixed(2)} Chinese Yuan`
 }
 
+//Create a function that takes in a string, reverses it, and returns it
+
+function solution(str) {
+  return str.split('').reverse().join('')
+}
