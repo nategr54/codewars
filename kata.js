@@ -63,3 +63,23 @@ let humanYearsCatYearsDogYears = function(humanYears) {
   arr.push(humanYears,catYears,dogYears)
   return arr
 }
+
+//function that determines if a plural is needed or not given a number
+function plural(n) {
+  if(n >= 0 && n < 1) {
+   return true;
+  }
+
+  else if (n > 1){
+    return true;
+   }
+   else {
+   return false;
+   }
+}
+
+//Create a function that accepts a list/array and a number n, and returns a list/array of the first n elements from the list/array.
+
+function take(arr, n) {
+  return arr.slice(0, n);
+}
