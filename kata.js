@@ -83,3 +83,8 @@ function plural(n) {
 function take(arr, n) {
   return arr.slice(0, n);
 }
+
+//DNA to RNA, DNA is composed of four acid bases(G,C,A,T) while RNA is composed of (G,C,A,U), write a method that, given a string, converts DNA to RNA
+function DNAtoRNA(dna) {
+  return dna.split('T').join('U')
+}
