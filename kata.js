@@ -88,3 +88,11 @@ function take(arr, n) {
 function DNAtoRNA(dna) {
   return dna.split('T').join('U')
 }
+
+//to sqr or not to sqr, write a method that will takes an array, processes all numbers, if the number has an int as a sqrt take it, otherwise sqr it.
+function sqrOrSqrt(array) {
+  return array.map(x => {
+    const r = Math.sqrt(x)
+    return (r % 1 == 0) ? r : (x*x)
+  })
+}
