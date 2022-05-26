@@ -107,3 +107,8 @@ function areYouPlayingBanjo(name) {
     return name + ' does not play banjo';
   }
 }
+
+//Determine if int is a square # 
+function isSquare(n) {
+  return Math.sqrt(n) % 1 === 0
+}
