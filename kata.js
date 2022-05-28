@@ -112,3 +112,9 @@ function areYouPlayingBanjo(name) {
 function isSquare(n) {
   return Math.sqrt(n) % 1 === 0
 }
+
+//Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+function countSheep(arrOfSheep) {
+  const result = arrOfSheep.filter(x=> x === true)
+  return result
+}
