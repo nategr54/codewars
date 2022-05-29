@@ -143,3 +143,17 @@ function getGrade (s1, s2, s3) {
     else if (avg < 90) return "B";
     else return "A";
 }
+//REGEX PIN length, make sure inputed PIN is either 4 or 6 numbers
+function validatePIN (pin) {
+  
+  var pinlen = pin.length;
+  var isCorrectLength = (pinlen == 4 || pinlen == 6);
+  var hasOnlyNumbers = pin.match(/^\d+$/);
+    
+  if(isCorrectLength && hasOnlyNumbers){
+    return true;
+  }
+  
+  return false;
+
+}
