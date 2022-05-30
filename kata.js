@@ -157,3 +157,18 @@ function validatePIN (pin) {
   return false;
 
 }
+
+var numArray = [140000, 104, 99];
+numArray.sort(function(a, b) {
+  return a - b;
+});
+
+//Your task is to sum the differences between consecutive pairs in the array in descending order.
+function sumOfDifferences(arr) {
+  let sorted = arr.sort((a, b) => b - a)
+  let sum = 0;
+  for (let i = 0; i < sorted.length - 1; i++) {
+    sum += (arr[i] - arr[i + 1]);
+  }
+  return sum;
+}
