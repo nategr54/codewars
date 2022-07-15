@@ -172,3 +172,12 @@ function sumOfDifferences(arr) {
   }
   return sum;
 }
+
+//Complete the square sum function so that it squares each number passed into it and then sums the results together.
+function squareSum(numbers){
+  let squareElements = numbers.map(x => x * x)
+  const sum = squareElements.reduce((acc, c) => {
+    return acc + c;  
+  }, 0)
+  return sum
+  }
