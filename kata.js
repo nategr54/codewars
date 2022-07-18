@@ -202,3 +202,8 @@ function basicOp(operation, value1, value2) {
       return 0
   }
 }
+
+//convert boolean values to Yes or No
+function boolToWord(bool) {
+  return bool ? 'Yes':'No'
+}
