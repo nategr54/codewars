@@ -207,3 +207,14 @@ function basicOp(operation, value1, value2) {
 function boolToWord(bool) {
   return bool ? 'Yes':'No'
 }
+
+//convert strings to numbers
+function strToNum(str) {
+  return Number(str)
+  // or return parseInt(str)
+}
+
+describe( "stringToNumber", function(){
+  it( "should work for the examples" , function(){
+    Test.assertEquals(stringToNumber("1234"),1234)
+    Test.assertEquals(stringToNumber("605"), 605)
