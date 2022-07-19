@@ -228,3 +228,10 @@ function openOrSenior(data) {
   return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open')
 
 }
+
+
+//return true if input is a wilson prime
+function amIWilson(p) {
+  return p==5 || p==13 || p==563
+//these are the only know wilson primes
+}
