@@ -235,3 +235,8 @@ function amIWilson(p) {
   return p==5 || p==13 || p==563
 //these are the only know wilson primes
 }
+
+//given an array of integers, double all the numbers in the array
+function maps(x) {
+  return x.map(n => n * 2)
+}
