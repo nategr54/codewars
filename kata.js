@@ -240,3 +240,8 @@ function amIWilson(p) {
 function maps(x) {
   return x.map(n => n * 2)
 }
+
+// write a function that returns true only if passed in an argument that evaluates NaN and returns false otherwise
+const isReallyNaN = Number.isNaN
+// or
+const isReallyNaN = val => val != val
