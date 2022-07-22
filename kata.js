@@ -245,3 +245,8 @@ function maps(x) {
 const isReallyNaN = Number.isNaN
 // or
 const isReallyNaN = val => val != val
+
+// write a script that checks to see if the player has achieved enough points to rank up to E4
+function playerRankUp (points){
+  return points < 100 ? false : "Well done! You have advanced to the qualifying stage. Win 2 out of your next 3 games to rank up.";
+}
